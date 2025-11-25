@@ -1,0 +1,32 @@
+/* assets/css/style.scss 맨 아래에 추가 */
+
+.content {
+  h1 {
+    /* 글자 크기 및 폰트 */
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    /* 색상 변경 (주의: 다크모드 호환성을 위해 변수 사용 권장) */
+    color: #FF6B6B;
+
+    /* 밑줄 꾸미기 */
+    border-bottom: 4px solid #FF6B6B;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+    /* 아이콘 같은 것을 앞에 붙이고 싶다면 */
+    &::before {
+      content: "# ";
+      color: #ccc;
+      font-size: 0.8em;
+    }
+  }
+
+  /* H2 (##) 태그도 바꾸고 싶다면 */
+  h2 {
+    color: #4D96FF;
+    border-left: 5px solid #4D96FF;
+    padding-left: 10px;
+    background-color: rgba(77, 150, 255, 0.1); /* 배경색 연하게 */
+  }
+}
